@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--default-font);
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+:root {
+    --primary-color: rgb(201, 204, 224);
+    --secondary-colorr: rgb(236, 237, 244);
+    --tertiary-color: rgb(254, 254, 254);
+    --paper-color: rgb(255, 255, 255);
+    --pen-color: rgb(0, 0, 0);
+    --file-btn: rgb(0, 131, 187);
+    --file-hover-btn: rgb(0, 142, 204);
+    --menu-hover-btn: rgb(250, 250, 250);
+    --menu-text-color: rgb(36, 36, 36);
+    --default-text: rgb(50, 50, 50);
+
+    --default-font: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-flow: column;
+    gap: 1%;
+}
+header {
+    width: 100%;
+    height: 10.5rem;
+}
+main {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100%;
+    padding: 0.3rem;
+}
+footer {
+    width: 100%;
+    height: 1.5rem;
+}
+.logo-div {
+    height: 1.5rem;
+    width: 100%;
+    background-color: var(--tertiary-color);
+    display: flex;
+    flex-flow: row;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.4rem;
+}
+.fa-solid {
+    text-align: center;
+    vertical-align: middle;
+    border-right: solid 1px var(--primary-color);
+    padding-left: 0.2rem;
+    padding-right: 0.4rem;
+}
+.logo-title {
+    display: flex;
+    flex-flow: row;
+    gap: 0.4rem;
+    align-items: center;
+}
+#company-title, #project-title {
+    font-size: small;
+    vertical-align: middle;
+    font-weight: 100;
+}
+.features-div {
+    background-color: var(--secondary-colorr);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+.menu-div {
+    background-color: var(--tertiary-color);
+    display: flex;
+    flex-flow: row;
+}
+.file-btn, .home-btn, .view-btn {
+    border: none;
+    height: 1.5rem;
+    color: var(--menu-text-color);
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    background-color: var(--tertiary-color);
+    border-bottom: solid 1px var(--primary-color);
+}
+.file-btn {
+    background-color: var(--file-btn);
+    color: var(--tertiary-color);
+}
+.file-btn:hover {
+    background-color: var(--file-hover-btn);
+}
+.home-btn {
+    border-bottom: none;
+    border-top: solid 1px var(--primary-color);
+    border-right: solid 1px var(--primary-color);
+    border-left: solid 1px var(--primary-color);
+    background-color: var(--secondary-colorr);
+}
+.view-btn:hover {
+    background-color: var(--menu-hover-btn);
+    margin-left: 1px;
+}
+.file-div, .home-div, .view-div {
+    width: 100%;
+    height: 100%;
+}
+.file-div {
+    display: none;
+}
+.home-div {
+
+}
+.view-div {
+    display: none;
+}
+.menu-overflow {
+    width: 100%;
+    border-bottom: solid 1px var(--primary-color);
+}
+.paper {
+    background-color: var(--paper-color);
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+}
+.text {
+    color: var(--default-text);
+    margin-bottom: 5px;
+}
+
+@media(max-width: 420px) {
+    .paper {
+        width: 97%;
+    }
+}
